@@ -1,0 +1,20 @@
+html {
+    /*background-repeat: no-repeat; !* or repeat-x, repeat-y, no-repeat *!*/
+    /*background-size: cover; !* or cover, contain, or specific dimensions *!*/
+    /*background-image: url("../images/03.png");*/
+    /*background-position:  right;*/
+    /*background-attachment: fixed;*/
+    background-size: auto;
+    background-repeat: repeat;
+    transition-timing-function: ease;
+}
+
+html[data-theme="dark"] {
+    background-image: url("../images/bg_light.png");
+}
+
+html[data-theme="light"] {
+    background-image: url("../images/bg_dark.png");
+}
+
+

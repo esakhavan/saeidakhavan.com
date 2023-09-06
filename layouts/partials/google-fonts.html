@@ -1,8 +1,8 @@
 <!-- In your partials folder -->
 
-{{ if .Site.Params.google_fonts }}
+{{ if .Site.Params.font_config.google_fonts }}
   {{ $fonts := slice }}
-  {{ range .Site.Params.google_fonts }}
+  {{ range .Site.Params.font_config.google_fonts }}
     {{ $family := replace (index (.)  0) " " "+" }}
     {{ $weights := replace (index (.) 1) " " "" }}
     {{ $string := print $family ":" $weights }}
